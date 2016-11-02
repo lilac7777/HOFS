@@ -1,4 +1,5 @@
 function[I] = get_I(x,y,cons)
+%%compute I(x:y|cons)
 if nargin == 2
     data1 = x;
     data2 = y;

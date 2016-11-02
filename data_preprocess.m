@@ -1,4 +1,5 @@
 function [d,idx] = data_preprocess(dataori,isdiscrete)
+%preprocess data
 if nargin==1
     isdiscrete = 1;
 end
@@ -32,7 +33,7 @@ end
 else
     d = data;
 end
-    d=  normdata(d);
+    d=  normdata(d);%normalize data
 
 
 end

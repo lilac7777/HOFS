@@ -1,5 +1,5 @@
 clear variables
-num=10000000;
+num=100000;
 y = randi([1,2],num,1)-1;
 x(:,1) = randn(num,1)+y;
 x(:,2) = randn(num,1)+y/1.5;
@@ -15,4 +15,4 @@ Z = cov(x);
 % figure
 
 %imshow(Z,[],'InitialMagnification',10000)
-[selected,rank]= MIFS_ICA_fun(x,y);
+[selected,rank]= HOFS(x,y);

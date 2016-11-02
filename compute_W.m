@@ -11,7 +11,6 @@ for i = 1:maxIter
     tmp =(1-2*g((W*x)));
     step = tmp*x'+inv(W');
     W = W + lr* step;
- %  disp(norm(step));
 end
 
 S = W*X;
